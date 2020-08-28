@@ -2,6 +2,7 @@ import styled, {keyframes} from 'styled-components';
 import {shade} from 'polished';
 
 import Login from '../../assets/Background.png'
+import LogoImg from '../../assets/Logo.svg'
 
 export const Container = styled.div`
 height: 100vh;
@@ -77,5 +78,16 @@ export const Background = styled.div`
   flex: 1;
   background: url(${Login}) no-repeat center;
   background-size: cover;
+  background-color:#8257E5;
+  
+
+`;
+
+export const Logo = styled.div`
+/* flex:1; */
+background: url(${LogoImg}) no-repeat center;
+background-size:cover;
+background-color:#8257E5;
+
 `;
 

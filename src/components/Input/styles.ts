@@ -37,9 +37,9 @@ input {
     flex: 1;
     background: transparent;
     border: 0;
-    color: #f4ede8;
+    color:#6A6180;
     &::placeholder {
-      color: #9C98A6;
+      color:    #9C98A6;
     }
 
     svg {
@@ -47,7 +47,7 @@ input {
       ${(props) =>
         props.isFilled &&
         css`
-          color: ##8257e5;
+          color: #8257e5;
         `}
     }
   }
@@ -62,7 +62,7 @@ export const Error = styled(Tooltip)`
 
   span {
     background: #c53030;
-    color: #fff;
+    color: #6A6180;
     &::before {
       border-color: #c53030 transparent;
     }
