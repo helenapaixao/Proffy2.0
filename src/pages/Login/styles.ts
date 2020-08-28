@@ -79,15 +79,14 @@ export const Background = styled.div`
   background: url(${Login}) no-repeat center;
   background-size: cover;
   background-color:#8257E5;
+
+  img {
+      display:flex;
+      margin-left: 100px;
+      margin-top:300px;
+  }
+
   
-
-`;
-
-export const Logo = styled.div`
-/* flex:1; */
-background: url(${LogoImg}) no-repeat center;
-background-size:cover;
-background-color:#8257E5;
 
 `;
 

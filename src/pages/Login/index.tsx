@@ -1,5 +1,5 @@
 import React, { useRef, useCallback } from "react";
-import { Container, Content, Background, AnimationContainer, Logo } from "./styles";
+import { Container, Content, Background, AnimationContainer } from "./styles";
 
 import { FiLogIn, FiMail, FiLock } from "react-icons/fi";
 import { FormHandles } from "@unform/core";
@@ -59,14 +59,16 @@ const Login: React.FC = () => {
     <>
       <Container>
         <Background>
-        <Logo/>
-        {/*   <img src={logoImg} alt="Proffy" /> */}
+
+
+         <img src={logoImg} alt="Proffy" /> 
         </Background>
         <Content>
           <AnimationContainer>
             <Form ref={formRef} onSubmit={handleSubmit}>
               <h1>Fazer login</h1>
               <Input name="email" icon={FiMail} placeholder="E-mail" />
+              <Input name="password" icon={FiMail} placeholder="Senha" />
             </Form>
           </AnimationContainer>
         </Content>
