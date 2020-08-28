@@ -20,6 +20,24 @@ export const Content = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 700px;
+
+  h1 {
+      margin-right:130px;
+      font-style:bold;
+      font-size:36px;
+      font-weight: 600;
+      line-height: 36px;
+  }
+
+  h4 {
+   /*    margin-left:200px; */
+      font-size: 14px;
+      font-style: normal;
+      line-height: 24px;
+      text-align: right;
+      margin-bottom: 24px;
+      color: #9C98A6;
+  }
 `;
 const appearFromLeft = keyframes`
   from {

@@ -69,6 +69,8 @@ const Login: React.FC = () => {
               <h1>Fazer login</h1>
               <Input name="email" icon={FiMail} placeholder="E-mail" />
               <Input name="password" icon={FiMail} placeholder="Senha" />
+              <h4>Esqueci minha senha</h4>
+              <Button>Entrar</Button>
             </Form>
           </AnimationContainer>
         </Content>
