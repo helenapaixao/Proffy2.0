@@ -1,17 +1,14 @@
-import styled, {keyframes} from 'styled-components';
-import {shade} from 'polished';
+import styled, { keyframes } from "styled-components";
+import { shade } from "polished";
 
-import Login from '../../assets/Background.png'
-import LogoImg from '../../assets/Logo.svg'
+import Login from "../../assets/Background.png";
+import LogoImg from "../../assets/Logo.svg";
 
 export const Container = styled.div`
-height: 100vh;
-display:flex;
-align-items: scretch;
-
-
+  height: 100vh;
+  display: flex;
+  align-items: scretch;
 `;
-
 
 export const Content = styled.div`
   display: flex;
@@ -22,21 +19,21 @@ export const Content = styled.div`
   max-width: 700px;
 
   h1 {
-      margin-right:130px;
-      font-style:bold;
-      font-size:36px;
-      font-weight: 600;
-      line-height: 36px;
+    margin-right: 130px;
+    font-style: bold;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 36px;
   }
 
   h4 {
-   /*    margin-left:200px; */
-      font-size: 14px;
-      font-style: normal;
-      line-height: 24px;
-      text-align: right;
-      margin-bottom: 24px;
-      color: #9C98A6;
+    /*    margin-left:200px; */
+    font-size: 14px;
+    font-style: normal;
+    line-height: 24px;
+    text-align: right;
+    margin-bottom: 24px;
+    color: #9c98a6;
   }
 `;
 const appearFromLeft = keyframes`
@@ -70,12 +67,12 @@ export const AnimationContainer = styled.div`
       text-decoration: none;
       transition: color 0.2s;
       &:hover {
-        color: ${shade(0.2, '#f4ede8')};
+        color: ${shade(0.2, "#f4ede8")};
       }
     }
   }
   > a {
-    color: #ff9000;
+    color: #8257e5;
     display: block;
     margin-top: 24px;
     text-decoration: none;
@@ -87,7 +84,7 @@ export const AnimationContainer = styled.div`
       margin-left: 16px;
     }
     &:hover {
-      color: ${shade(0.2, '#ff9000')};
+      color: ${shade(0.2, "#8257E5")};
     }
   }
 `;
@@ -96,15 +93,11 @@ export const Background = styled.div`
   flex: 1;
   background: url(${Login}) no-repeat center;
   background-size: cover;
-  background-color:#8257E5;
+  background-color: #8257e5;
 
   img {
-      display:flex;
-      margin-left: 100px;
-      margin-top:300px;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 300px;
   }
-
-  
-
 `;
-

@@ -14,6 +14,7 @@ import Input from "../../components/Input";
 import Button from "../../components/Button";
 
 import logoImg from "../../assets/Logo.svg";
+import logoImg2 from "../../assets/Logo2.svg";
 import { useAuth } from "../../hooks/auth";
 
 interface LoginFormData {
@@ -59,9 +60,9 @@ const Login: React.FC = () => {
     <>
       <Container>
         <Background>
-
-
-         <img src={logoImg} alt="Proffy" /> 
+          <div>
+            <img src={logoImg} alt="Proffy" />
+          </div>
         </Background>
         <Content>
           <AnimationContainer>
@@ -70,8 +71,11 @@ const Login: React.FC = () => {
               <Input name="email" icon={FiMail} placeholder="E-mail" />
               <Input name="password" icon={FiMail} placeholder="Senha" />
               <h4>Esqueci minha senha</h4>
-              <Button>Entrar</Button>
+              <Button type="submit">Entrar</Button>
             </Form>
+
+            <h4>Não tem conta?</h4>
+            <a>Cadastre-se</a>
           </AnimationContainer>
         </Content>
       </Container>
