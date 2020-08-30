@@ -1,7 +1,7 @@
 import React, { useRef, useCallback } from "react";
-import { Container, Content, Background, AnimationContainer } from "./styles";
+import { Container, Content, Background, AnimationContainer,Footer } from "./styles";
 
-import { FiLogIn, FiMail, FiLock } from "react-icons/fi";
+import { FiMail, FiEye } from "react-icons/fi";
 import { FormHandles } from "@unform/core";
 import { Form } from "@unform/web";
 import * as Yup from "yup";
@@ -14,8 +14,11 @@ import Input from "../../components/Input";
 import Button from "../../components/Button";
 
 import logoImg from "../../assets/Logo.svg";
+import heart from '../../assets/coração.svg';
 import logoImg2 from "../../assets/Logo2.svg";
 import { useAuth } from "../../hooks/auth";
+
+import Checkbox from "../../components/Checkbox";
 
 interface LoginFormData {
   email: string;
@@ -68,14 +71,21 @@ const Login: React.FC = () => {
           <AnimationContainer>
             <Form ref={formRef} onSubmit={handleSubmit}>
               <h1>Fazer login</h1>
-              <Input name="email" icon={FiMail} placeholder="E-mail" />
-              <Input name="password" icon={FiMail} placeholder="Senha" />
+              <Input type="text" name="email" icon={FiMail} placeholder="E-mail" />
+              <Input type="password" name="password" icon={FiEye} placeholder="Senha" />
+
+          
+              <Checkbox />
               <h4>Esqueci minha senha</h4>
               <Button type="submit">Entrar</Button>
             </Form>
-
-            <h4>Não tem conta?</h4>
+            <Footer>
+            <h3>Não tem conta?</h3>
             <a>Cadastre-se</a>
+            <h4>É de graça</h4>
+            <img src={heart} alt="coração"/>
+            </Footer>
+           
           </AnimationContainer>
         </Content>
       </Container>

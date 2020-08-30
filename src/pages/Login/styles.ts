@@ -16,7 +16,8 @@ export const Content = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  max-width: 700px;
+  height: 100%;
+  /*  max-width: 700px; */
 
   h1 {
     margin-right: 130px;
@@ -32,8 +33,13 @@ export const Content = styled.div`
     font-style: normal;
     line-height: 24px;
     text-align: right;
-    margin-bottom: 24px;
+
     color: #9c98a6;
+  }
+
+  @media (min-width: 1100px) {
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
   }
 `;
 const appearFromLeft = keyframes`
@@ -90,14 +96,45 @@ export const AnimationContainer = styled.div`
 `;
 
 export const Background = styled.div`
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+  width: 768px;
+  /*    height: 820px; */
   background: url(${Login}) no-repeat center;
-  background-size: cover;
+  background-size: contain;
   background-color: #8257e5;
 
   img {
-    display: flex;
-    margin-left: 50px;
-    margin-top: 300px;
+    width: 250px;
   }
 `;
+
+export const Footer = styled.footer`
+  h3 {
+    font-size: 16px;
+    color: #6a6180;
+    margin-right: 200px;
+  }
+
+  h4 {
+    font-size: 12px;
+    color: #9C98A6;
+    margin-right: -0.1px;
+  }
+
+  a {
+    color:#8257E5;
+    font-size:14px;
+    text-decoration: none;
+    font-family: Poppins;
+  }
+
+  img {
+    color: #8257E5;
+    margin-left: 400px;
+    margin-top: -20px;
+
+  }
+`; 
