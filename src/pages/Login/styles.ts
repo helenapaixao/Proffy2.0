@@ -108,20 +108,18 @@ export const Background = styled.div`
   background-color: #8257e5;
 
   div {
-    margin-left:100px
+    margin-left: 100px;
   }
 
   p {
-    color: #D4C2FF;
+    color: #d4c2ff;
     font-size: 18px;
     font-style: normal;
     max-width: 200px;
-    
   }
 
   img {
     width: 250px;
-
   }
 `;
 
@@ -134,23 +132,20 @@ export const Footer = styled.footer`
 
   h4 {
     font-size: 12px;
-    color: #9C98A6;
-    margin-right: -0.1px;
+    color: #9c98a6;
+  }
+
+  img {
+    color: #8257e5;
+    margin-left: 400px;
+    /*     margin-top: -20px; */
   }
 
   a {
-    color:#8257E5;
-    font-size:14px;
-    text-decoration: none;
+    color: #8257e5;
+    font-size: 14px;
+    /*     text-decoration: none; */
     font-family: Poppins;
+    font-weight: bold;
   }
-
-
-
-  img {
-    color: #8257E5;
-    margin-left: 400px;
-    margin-top: -20px;
-
-  }
-`; 
+`;
