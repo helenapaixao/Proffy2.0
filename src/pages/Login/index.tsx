@@ -1,5 +1,5 @@
 import React, { useRef, useCallback } from "react";
-import { Container, Content, Background, AnimationContainer,Footer } from "./styles";
+import { Container, Content, Background, AnimationContainer, Footer } from "./styles";
 
 import { FiMail, FiEye } from "react-icons/fi";
 import { FormHandles } from "@unform/core";
@@ -14,7 +14,7 @@ import Input from "../../components/Input";
 import Button from "../../components/Button";
 
 import logoImg from "../../assets/Logo.svg";
-import heart from '../../assets/coração.svg';
+import heart from "../../assets/coração.svg";
 import logoImg2 from "../../assets/Logo2.svg";
 import { useAuth } from "../../hooks/auth";
 
@@ -75,18 +75,19 @@ const Login: React.FC = () => {
               <Input type="text" name="email" icon={FiMail} placeholder="E-mail" />
               <Input type="password" name="password" icon={FiEye} placeholder="Senha" />
 
-          
               <Checkbox />
               <h4>Esqueci minha senha</h4>
               <Button type="submit">Entrar</Button>
             </Form>
             <Footer>
-            <h3>Não tem conta?</h3>
-            <a>Cadastre-se</a>
-            <h4>É de graça</h4>
-            <img src={heart} alt="coração"/>
+              <h3>Não tem conta?</h3>
+              <a href="/cadastro"> Cadastre-se</a>
+
+              <div>
+                <h4>É de graça</h4>
+                <img src={heart} alt="coração" />
+              </div>
             </Footer>
-           
           </AnimationContainer>
         </Content>
       </Container>

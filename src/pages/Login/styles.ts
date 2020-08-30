@@ -5,9 +5,15 @@ import Login from "../../assets/Background.png";
 import LogoImg from "../../assets/Logo.svg";
 
 export const Container = styled.div`
-  height: 100vh;
-  display: flex;
-  align-items: scretch;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 0.3fr 0.7fr;
+
+  @media (min-width: 1100px) {
+    grid-template-columns: 0.5fr 0.5fr;
+    height: 100vh;
+  }
 `;
 
 export const Content = styled.div`
@@ -15,9 +21,6 @@ export const Content = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
-  /*  max-width: 700px; */
 
   h1 {
     margin-right: 130px;
@@ -100,8 +103,6 @@ export const Background = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 24px;
-  width: 768px;
-  /*    height: 820px; */
   background: url(${Login}) no-repeat center;
   background-size: contain;
   background-color: #8257e5;
@@ -143,6 +144,8 @@ export const Footer = styled.footer`
     text-decoration: none;
     font-family: Poppins;
   }
+
+
 
   img {
     color: #8257E5;
