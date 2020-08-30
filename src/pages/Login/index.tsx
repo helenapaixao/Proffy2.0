@@ -65,6 +65,7 @@ const Login: React.FC = () => {
         <Background>
           <div>
             <img src={logoImg} alt="Proffy" />
+            <p>Sua plataforma de estudos online</p>
           </div>
         </Background>
         <Content>

@@ -106,8 +106,21 @@ export const Background = styled.div`
   background-size: contain;
   background-color: #8257e5;
 
+  div {
+    margin-left:100px
+  }
+
+  p {
+    color: #D4C2FF;
+    font-size: 18px;
+    font-style: normal;
+    max-width: 200px;
+    
+  }
+
   img {
     width: 250px;
+
   }
 `;
 
