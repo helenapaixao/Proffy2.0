@@ -1,5 +1,5 @@
 import React, { useRef, useCallback } from "react";
-import { Container, Content, Background, AnimationContainer, Footer } from "./styles";
+import { Container, Content, Background, AnimationContainer } from "./styles";
 
 import { FiMail, FiEye } from "react-icons/fi";
 import { FormHandles } from "@unform/core";
@@ -76,9 +76,9 @@ const Login: React.FC = () => {
               <h1>Cadastro</h1>
               <p>Preencha os dados abaixo para começar.</p>
               <Input type="text" name="name" icon={FiMail} placeholder="Nome" />
-              <Input type="text" name="name" icon={FiMail} placeholder="Sobrenome" />
+              <Input type="text" name="sobrenome" icon={FiMail} placeholder="Sobrenome" />
               <Input type="email" name="email" icon={FiMail} placeholder="E-mail" />
-              <Input type="text" name="password" icon={FiEye} placeholder="Senha" />
+              <Input type="password" name="password" icon={FiEye} placeholder="Senha" />
 
               <Button type="submit">Concluir cadastro</Button>
             </Form>
