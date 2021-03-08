@@ -8,7 +8,7 @@ import Register from '../pages/Register';
 const Routes: React.FC = () => (
   <Switch>
     <Route exact path="/" component={Login} />
-    <Route path="/Register" component={Register} />
+    <Route exact path="/register" component={Register} />
   </Switch>
 );
 

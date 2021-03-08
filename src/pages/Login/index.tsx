@@ -71,7 +71,7 @@ const Login: React.FC = () => {
         <Content>
           <AnimationContainer>
             <Form ref={formRef} onSubmit={handleSubmit}>
-              <h1>Fazer login</h1>
+              <h1>Fazer asalogin</h1>
               <Input type="text" name="email" icon={FiMail} placeholder="E-mail" />
               <Input type="password" name="password" icon={FiEye} placeholder="Senha" />
 

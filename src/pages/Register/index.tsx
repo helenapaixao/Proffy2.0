@@ -27,7 +27,7 @@ interface LoginFormData {
   sobrenome: string;
 }
 
-const Login: React.FC = () => {
+const Register: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
   const { signIn } = useAuth();
   const history = useHistory();
@@ -95,4 +95,4 @@ const Login: React.FC = () => {
   );
 };
 
-export default Login;
+export default Register;
