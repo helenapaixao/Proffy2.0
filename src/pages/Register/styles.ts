@@ -131,7 +131,7 @@ export const Background = styled.div`
   }
 
   img {
-    width: 250px;
+    width: 350px;
   }
 `;
 
